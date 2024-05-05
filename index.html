@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joemike Pogi's Order System</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Joemike Pogi's Canteen!</h1>
+        <h2>Here's Our Menu:</h2>
+    </header>
+    
+    <main>
+        <section>
+            <h3>Food Items:</h3>
+            <ul>
+                <li><strong>Pizza</strong> - 120 PHP</li>
+                <li><strong>Salad</strong> - 80 PHP</li>
+                <li><strong>Sandwich</strong> - 70 PHP</li>
+                <li><strong>Sushi</strong> - 100 PHP</li>
+                <li><strong>Tacos</strong> - 90 PHP</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Place Your Order:</h3>
+            <form action="joemikegwapocanteen.php" method="POST">
+                <label for="foodSelect">Choose your order:</label>
+                <select id="foodSelect" name="foodSelectField">
+                    <option value="pizza">Pizza</option>
+                    <option value="salad">Salad</option>
+                    <option value="sandwich">Sandwich</option>
+                    <option value="sushi">Sushi</option>
+                    <option value="tacos">Tacos</option>
+                </select> <br><br>
+                <label for="quantity">Quantity:</label>
+                <input type="text" id="quantity" name="quantityTextField"> <br><br>
+                <label for="cash">Cash:</label>
+                <input type="text" id="cash" name="cashTextField"> <br><br>
+                <input type="submit" value="ORDER!" name="orderButton">
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Joemike Pogi's Canteen. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
